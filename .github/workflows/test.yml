@@ -1,0 +1,30 @@
+name: Test admin app
+
+on:
+  push:
+    paths-ignore:
+      - '.github/workflows/docker.yml'
+      - '.github/workflows/qodana.yml'
+      - '.github/dependabot.yml'
+      - '.dockerignore'
+      - '.gitattributes'
+      - '.gitignore'
+      - 'Dockerfile'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Master
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build

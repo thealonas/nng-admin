@@ -1,0 +1,52 @@
+{
+  "name": "nng-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@redux-devtools/extension": "latest",
+    "@sentry/react": "latest",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vkontakte/icons": "latest",
+    "@vkontakte/vkui": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "ts-serializable": "latest",
+    "typescript": "latest",
+    "universal-cookie": "latest",
+    "zustand": "latest"
+  },
+  "scripts": {
+    "start80": "set PORT=80 && react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "latest"
+  }
+}

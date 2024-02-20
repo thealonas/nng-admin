@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+
+# NPM
+node_modules
+
+# JetBrains
+.idea
+
+# Build
+build
+build.zip
